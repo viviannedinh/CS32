@@ -1,0 +1,18 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 2. The Coord class cannot be used as a mapping type because there are not any assignment operators defined in the class, and therefore, two Coord objects cannot be compared, which is needed in some member functions of Map. For example, in the find() member function, the \'93!=\'93 Boolean operator is used to compare m_key to a key and because the KeyType would be Coord, the function would have  no way to compare the Coords and it would cause a compilation error.\
+\
+3a. The time complexity of the algorithm is O(N\super 3\nosupersub ) because there are 3 nested for loops that each go for N times each. \
+\
+3b. The time complexity of the algorithm is O(N\super 3\nosupersub ) because the second loop goes for i times and i can be at most N-1 which is basically N, making this 3 nested for loops that basically go for N times each.\
+\
+4a. The time complexity of this member function is O(N\super 2\nosupersub ) because the for loop goes for N times and calls the get function with 3 parameters each time. In the get function, there is a for loop that goes for N times and therefore, it\'92s basically a nested for loop making the time complexity O(N\super 2\nosupersub ).\
+\
+4b. The time complexity of this member function is O(N) because the for loop will run through the linked list once, reassigning values. This is a better implementation than in part a because its for loop doesn\'92t call any functions that would increase time complexity. \
+\
+}
